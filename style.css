@@ -3,6 +3,7 @@
 body {
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	height: 100vh;
 	background: #1c1624;
@@ -11,7 +12,8 @@ body {
 	transform-style: preserve-3d;
 }
 
-#buttOn {
+#buttOn, #buttOn1 {
+	margin-bottom: 5px;
 	box-shadow: 0px 1px 0px 0px #f0f7fa;
 	background:linear-gradient(to bottom, #1367d4 5%, #26b6eb 100%);
 	background-color:#1367d4;
@@ -27,27 +29,25 @@ body {
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5b6178;
 }
-#buttOn:hover {
+#buttOn:hover, #buttOn1:hover{
 	background:linear-gradient(to bottom, #26b6eb 5%, #1367d4 100%);
 	background-color:#26b6eb;
 }
-#buttOn:active {
+#buttOn:active, #buttOn1:active {
 	position:relative;
 	top:1px;
 }
 
 #myDiv{
+	width: 300px;
+	height: 200px;
 	color: white;
 	font-size: 1.5em;
 	background-color: #1c1624;
 	position: absolute;
 	z-index: 1;
 	display: none;
-}
-#myDiv img {
-	margin-left: 20px;
-	width: 290px;
-	height: 250px;
+	text-align: center;
 }
 
 
